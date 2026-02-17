@@ -1,21 +1,32 @@
 
 class Dog{
     String breed;
-    void bark(){
-        System.err.println("Woof!");
+    int age;
+
+    Dog(String breed, int age){
+        this.breed = breed;
+        this.age = age;
     }
-}
+
+    void displayInfo(){
+        System.out.println("Breed: " + this.breed + ", Age" + this.age);
+    }
+    }
+
 
 
 
 public class Main {
     public static void main(String [] args) {
-        //Create an object of the Dog class
-        Dog myDog = new Dog();
-        myDog.breed = "Golden Retriever";
+        //One line to create and initialize
+        Dog myDog = new Dog("Husky", 3);
+        myDog.displayInfo();
 
-        System.out.println("My dog is a " + myDog.breed);
-        myDog.bark();
 
+        Cat cat1 = new Cat("Bella", "Black", 14);
+        Cat cat2 = new Cat("Sasha", "White", 9);
+
+        cat1.meow();
+        cat2.meow();
     }
 }
