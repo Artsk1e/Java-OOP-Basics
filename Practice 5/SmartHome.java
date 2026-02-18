@@ -19,7 +19,7 @@ class LightBulb{
     }
 
     void status(){
-        if (isOn = true){
+        if (isOn == true){
         System.out.println("The " + roomName + " is on");
         } else {
             System.out.println("The " + roomName + " is Off");
@@ -35,6 +35,8 @@ public class SmartHome {
 
     room1.switchOff();
     room1.switchOn();
+    room1.status();
+    room1.switchOff();
     room1.status();
     }
 }
