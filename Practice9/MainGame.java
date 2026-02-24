@@ -1,5 +1,4 @@
 
-
 public class MainGame {
     public static void main(String[] args) {
         GameCharacter duke = new GameCharacter(100);
