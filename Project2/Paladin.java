@@ -7,11 +7,11 @@ public class Paladin extends BaseUnit implements Attacker, Healer{
 
     @Override
     public void attack(){
-        System.out.println("Paladin Attacks!");
+        System.out.println(unitName+ " Paladin Attacks!");
     }
     
     @Override
     public void heal(){
-        System.out.println("Paladin Heals!");
+        System.out.println(unitName + " Paladin Heals!");
     }
 }

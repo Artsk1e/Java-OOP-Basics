@@ -7,7 +7,7 @@ public class Medic extends BaseUnit implements Healer {
 
     @Override
     public void heal(){
-        System.out.println("Medic Heal!");
+        System.out.println(unitName + " Medic Heal!");
     }
     
 }

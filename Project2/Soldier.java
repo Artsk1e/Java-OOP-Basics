@@ -8,6 +8,6 @@ public class Soldier extends BaseUnit implements Attacker {
 
     @Override
     public void attack(){
-        System.out.println("Soldier attack!");
+        System.out.println(unitName + " Soldier attack!");
     }
 }
