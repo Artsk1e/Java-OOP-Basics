@@ -1,10 +1,10 @@
 
 public abstract class Item {
     protected String name;
-    protected double baseWeight;
+    protected double weight;
 
-    public Item(String name, double baseWeight){
+    public Item(String name, double weight){
         this.name = name;
-        this.baseWeight = baseWeight;
+        this.weight = weight;
     }
 }

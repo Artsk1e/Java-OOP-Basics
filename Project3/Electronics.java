@@ -1,13 +1,16 @@
-package Project3;
 
-public class Electronics extends Item implements Fragile, Insured{
-    
-    public Electronics(String name, double baseWeight){
-        super(name, baseWeight);
+
+public class Electronics extends Item implements Fragile, Insured {
+    public Electronics(String name, double weight) {
+        super(name, weight);
     }
 
     @Override
-    public void getPackingCost(){
-        
+    public double getPackingCost(){
+        return weight * 2.0;
     }
+
+    @Override
+    public double getInsurancePremium() {
+        return 50.0; }
 }
