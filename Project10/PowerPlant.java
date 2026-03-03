@@ -1,7 +1,7 @@
 
 
 public class PowerPlant extends Infrastructure implements Powerable{
-    private String fuelType;
+    private final String fuelType;
 
     public PowerPlant(String address, double energyUsage, boolean isActive, String fuelType){
         super(address, energyUsage, isActive);

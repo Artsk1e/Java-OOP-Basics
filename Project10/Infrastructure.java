@@ -1,7 +1,7 @@
 
 
 public abstract class Infrastructure {
-    private String address;
+    private final String address;
     private double energyUsage;
     private boolean isActive;
 

@@ -15,7 +15,7 @@ public class Main {
             c.displayInfo();
 
             if(c.getHealth() < 20){
-                System.out.println("Urgent Repair needed.");
+                System.out.println("Health is " + c.getHealth() + " Urgent Repair needed.");
             } else {
                 System.out.println("System Nominal");
             }
