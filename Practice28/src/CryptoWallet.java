@@ -10,7 +10,7 @@ public class CryptoWallet extends BaseWallet{
         double totalCost = amount + (amount * tax);
 
         if (totalCost <= getBalance()) {
-            setBalance(totalCost-getBalance());
+            recordPayment(totalCost);
             return true;
         }
         else {
@@ -19,8 +19,5 @@ public class CryptoWallet extends BaseWallet{
 
 }
 
-    @Override
-    public void addfunds(double amount){
-        setBalance(getBalance()-amount);
-    }
+
 }

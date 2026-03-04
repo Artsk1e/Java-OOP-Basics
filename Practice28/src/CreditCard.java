@@ -14,8 +14,4 @@ public class CreditCard extends BaseWallet{
         return false;
     }
 
-    @Override
-    public void addfunds(double amount){
-        setBalance(getBalance()+amount);
-    }
 }
