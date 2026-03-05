@@ -1,19 +1,21 @@
-
+import java.util.ArrayList;
 
 public class Main {
-    public static void main(String [] args){
+    public static void main(String [] args) {
         CryptoWallet sam = new CryptoWallet("Sam", 200);
+        CreditCard ball = new CreditCard("ball", 20);
+        Bank banks = new Bank();
 
-        System.out.println("Name: " + sam.getOwner());
-        System.out.println("Balance: $" + sam.getBalance());
-        sam.addfunds(50);
-        sam.processPayment(100);
-        sam.processPayment(20);
+        banks.addAccount(sam);
+        banks.addAccount(ball);
+        banks.showStatus();
+        banks.applyAnnualFee(50);
+        banks.showStatus();
 
-        System.out.println("Final Balance: $" + sam.getBalance());
+        System.out.println();
         sam.printHistory();
 
-        System.out.println("-------------------------------------------");
+
     }
 
 
